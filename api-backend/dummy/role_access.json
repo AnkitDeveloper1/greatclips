@@ -1,0 +1,6 @@
+[
+    {
+        "admins": ["add", "edit", "list", "delete"],
+        "users": ["add", "edit", "list", "delete"]
+    }
+]
