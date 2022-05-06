@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Promotions() {
 
@@ -9,19 +10,19 @@ function Promotions() {
                     <nav className="navbar navbar-expand-lg navbar-light bg-white promotions-tabs">
                         <ul className="navbar-nav">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#">Paul Mitchell Sale</a>
+                                <Link className="nav-link" to="">Paul Mitchell Sale</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Coupons</a>
+                                <Link className="nav-link" to="">Coupons</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Senior Discounts</a>
+                                <Link className="nav-link" to="">Senior Discounts</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">NHL Partnership</a>
+                                <Link className="nav-link" to="">NHL Partnership</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Monster Jam</a>
+                                <Link className="nav-link" to="">Monster Jam</Link>
                             </li>
                         </ul>
                     </nav>
@@ -39,7 +40,7 @@ function Promotions() {
                 <div className="col-md-4">
                     <h1>Great Products. Low Prices.</h1>
                     <p>All Paul Mitchell hair products are on sale for $12.99 or less in the US or $16.99 in Canada for March and April in participating Great Clips salons.</p>
-                    <a href="" className="btn btn-primary">SEE DEAL</a>
+                    <Link to="" className="btn btn-primary">SEE DEAL</Link>
                 </div>
                 <div className="col-md-2"></div>
             </div>
@@ -53,7 +54,7 @@ function Promotions() {
                 <div className="col-md-4">
                     <h1>Coupons</h1>
                     <p>Find the answers to your Great Clips coupon-related questions here!</p>
-                    <a href="" className="btn btn-primary">MORE INFO</a>
+                    <Link to="" className="btn btn-primary">MORE INFO</Link>
                 </div>
                 <div className="col-md-2"></div>
             </div>
@@ -67,7 +68,7 @@ function Promotions() {
                 <div className="col-md-4">
                     <h1>Senior Discounts</h1>
                     <p>Great Clips salons have senior discounts on haircuts.</p>
-                    <a href="" className="btn btn-primary">LEARN MORE</a>
+                    <Link to="" className="btn btn-primary">LEARN MORE</Link>
                 </div>
                 <div className="col-md-2"></div>
             </div>
@@ -81,7 +82,7 @@ function Promotions() {
                 <div className="col-md-4">
                     <h1>Official Hair Salon of the NHL&#xae;</h1>
                     <p>Love #hockeyhair? We got you. Celebrate great flow all season long at www.nhl.com/hockeyhair. From epic flows to magnificent mullets, we’re proud to be the official hair salon of this legendhairy league.</p>
-                    <a href="" className="btn btn-primary">SEE DETAILS</a>
+                    <Link to="" className="btn btn-primary">SEE DETAILS</Link>
                 </div>
                 <div className="col-md-2"></div>
             </div>
@@ -95,7 +96,7 @@ function Promotions() {
                 <div className="col-md-4">
                     <h1>The Great Clips Mohawk Warrior&#xae;</h1>
                     <p>Try out the the Great Clips Mohawk Warrior® Snapchat lens to put yourself behind the wheel!</p>
-                    <a href="" className="btn btn-primary">TRY IT</a>
+                    <Link to="" className="btn btn-primary">TRY IT</Link>
                 </div>
                 <div className="col-md-2"></div>
             </div>
@@ -109,7 +110,7 @@ function Promotions() {
                 <div className="col-md-4">
                     <h1>Honor Veterans</h1>
                     <p>Learn how you can honor a vet with a free haircut</p>
-                    <a href="" className="btn btn-primary">SEE DETAILS</a>
+                    <Link to="" className="btn btn-primary">SEE DETAILS</Link>
                 </div>
                 <div className="col-md-2"></div>
             </div>

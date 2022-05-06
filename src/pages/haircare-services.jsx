@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function HairCareServices() {
 
@@ -42,7 +43,7 @@ function HairCareServices() {
                 </div>
 
                 <div className="text-center">
-                    <a className="btn btn-primary" href="">FIND A SALON NEAR YOU</a>
+                    <Link className="btn btn-primary" to="">FIND A SALON NEAR YOU</Link>
 
                     <p>Hair salon service pricing varies by location. Check with your nearby Great Clips hair salon for pricing.</p>
                     <p><i>*Not all Great Clips hair salons offer perms. Please contact your salon for availability.</i></p>

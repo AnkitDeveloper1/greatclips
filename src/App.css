@@ -1,3 +1,104 @@
+a {
+    color: #048667;
+}
+a:active, a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: #cb4e13 !important;
+}
 .currentlocationicon{
     position:absolute;
+}
+.saloon_listing {
+    overflow: scroll;
+    width: auto;
+    max-height: 500px;
+}
+.saloon_listing li {
+    height: 151px;
+    border-color: #ccc;
+    border-width: 1px 1px 1px 6px;
+    border-style: solid;
+    padding: 20px 240px 20px 20px;
+    margin-bottom: 3px;
+    margin-right: 20px;
+    background: #fff;
+}
+.saloon_listing li:hover {
+    border-left-color: #9acb3a;
+    background: #fff;
+}
+.saloon_detail_left_one, .saloon_detail_right_one {
+    margin: 4rem;
+}
+.saloon_detail_right_one {
+    background: #fff;
+    padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.saloon_detail_left_one p {
+    padding: 2rem 0;
+}
+.saloon_detail_left_one p span {
+    border-left: 0.3125rem solid #048667;
+    padding-left: 1rem;
+    display: inline-block;
+}
+.saloon_detail_left_one h1 {
+    font-size: 3.75rem;
+    line-height: 1.08;
+    font-weight: 200;
+}
+
+@media (min-width: 48rem) {
+    .saloon_detail_right_one a, .saloon_detail_right_one button {
+        font-size: 1.5rem !important;
+        line-height: 1 !important;
+    }
+}
+.saloon_detail_right_one a, .saloon_detail_right_one button {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+    display: block;
+}
+.btn-primary {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    border-radius: 0.625rem;
+    -webkit-box-shadow: 4px 4px 3px 0 rgb(4 134 103 / 10%);
+    box-shadow: 4px 4px 3px 0 rgb(4 134 103 / 10%);
+    text-align: center;
+    color: #fff;
+    background-color: #048667 !important;
+}
+.header_right_side {
+    background: #fff !important;
+}
+.drawer_menu_three a {
+    color: #2d2e2d;
+}
+.drawer_menu_two a {
+    color: #073b3a;
+    margin: 5px 0;
+}
+.drawer_menu_one a {
+    color: #048667;
+    font-weight: 400;
 }

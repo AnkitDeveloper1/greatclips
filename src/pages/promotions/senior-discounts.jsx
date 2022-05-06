@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function SeniorDiscounts() {
 
@@ -9,19 +10,19 @@ function SeniorDiscounts() {
                     <nav className="navbar navbar-expand-lg navbar-light bg-white promotions-tabs">
                         <ul className="navbar-nav">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#">Paul Mitchell Sale</a>
+                                <Link className="nav-link" to="">Paul Mitchell Sale</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Coupons</a>
+                                <Link className="nav-link" to="">Coupons</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Senior Discounts</a>
+                                <Link className="nav-link" to="">Senior Discounts</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">NHL Partnership</a>
+                                <Link className="nav-link" to="">NHL Partnership</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Monster Jam</a>
+                                <Link className="nav-link" to="">Monster Jam</Link>
                             </li>
                         </ul>
                     </nav>
@@ -44,7 +45,7 @@ function SeniorDiscounts() {
                 <li>Additional services like styling or hair products are not eligible for the discount.</li>
             </ul>
 
-            <a className="btn btn-primary" href="">FIND A SALON</a>
+            <Link className="btn btn-primary" to="">FIND A SALON</Link>
 
             <h3>Other Ways to Have a Great Visit</h3>
             <p><b>Avoid waiting in line by using our Online Check-In.</b> If you check in online for your haircut instead of at the salon’s front desk, you can get on the wait list from your home, the store, the coffee shop, or wherever you like to spend your time.</p>
@@ -54,7 +55,7 @@ function SeniorDiscounts() {
             <p><b>Great haircuts every time with Clip Notes.</b> When you visit a Great Clips salon, your stylist will record technical notes about your haircut – such as style, shape or type of haircut, clipper guards or desired length, sideburns, texturizing, and more. These notes, called Clip Notes, ensure the next time you visit a Great Clips salon the stylist that cuts your hair will know exactly how to deliver the same quality haircut you want.</p>
 
 
-            <a className="btn btn-primary" href="">CHECK IN ONLINE</a>
+            <Link className="btn btn-primary" to="">CHECK IN ONLINE</Link>
         </>
     );
 }

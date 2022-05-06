@@ -12,6 +12,7 @@ const saloons = require("./routes/saloons");
 const settings = require("./routes/settings");
 const attend = require("./routes/attend");
 const admins = require("./routes/admins");
+const usstates = require("./routes/usstates");
 
 app.use(fileupload());
 app.use(express.urlencoded({ extended: true }))
@@ -27,6 +28,7 @@ app.use('/api/saloons', saloons);
 app.use('/api/settings', settings);
 app.use('/api/attend', attend);
 app.use('/api/admins', admins);
+app.use('/api/usstates', usstates);
 
 // Created the server
 const server = app.listen(8080)

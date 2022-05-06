@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Coupons() {
 
@@ -9,19 +10,19 @@ function Coupons() {
                     <nav className="navbar navbar-expand-lg navbar-light bg-white promotions-tabs">
                         <ul className="navbar-nav">
                             <li className="nav-item active">
-                                <a className="nav-link" href="#">Paul Mitchell Sale</a>
+                                <Link className="nav-link" to="">Paul Mitchell Sale</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Coupons</a>
+                                <Link className="nav-link" to="">Coupons</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Senior Discounts</a>
+                                <Link className="nav-link" to="">Senior Discounts</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">NHL Partnership</a>
+                                <Link className="nav-link" to="">NHL Partnership</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Monster Jam</a>
+                                <Link className="nav-link" to="#">Monster Jam</Link>
                             </li>
                         </ul>
                     </nav>
@@ -46,7 +47,7 @@ function Coupons() {
                 <div className="col-md-4">
                     <h1>Sign Up Now for $2 Off</h1>
                     <p>Sign up to receive the latest deals, news and hair trend tips. As a thank you, we will email you a coupon for $2 off your next haircut.</p>
-                    <a href="" className="btn btn-primary">SIGN ME UP</a>
+                    <Link to="" className="btn btn-primary">SIGN ME UP</Link>
                     <p>*One time offer only. Eligible for newly opted-in email addresses only. Not valid with other offers.</p>
                 </div>
                 <div className="col-md-2"></div>

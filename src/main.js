@@ -15,6 +15,7 @@ import SaloonDetailPage from "./saloon/detail";
 import HistoryPage from "./profile/history";
 
 import "react-toastify/dist/ReactToastify.css";
+import 'rsuite/dist/rsuite.min.css';
 import HairCareServices from "./pages/haircare-services";
 import Promotions from "./pages/promotions/index";
 import PaulMitchellSale from "./pages/promotions/paul-mitchell-sale";
@@ -46,7 +47,7 @@ class Main extends Component {
                     <Route path="/" element={<Home actionMyLocation={actionMyLocation} />} />
                     
                     <Route path="/saloon" element={<SaloonPage userName={this.user?this.user.name:''} actionMyLocation={actionMyLocation} />} />
-                    <Route path="/saloon/:id" element={<SaloonDetailPage userName={this.user?this.user.name:''} actionMyLocation={actionMyLocation} />} />
+                    <Route path="/us/:state_code/:city/:address/:id" element={<SaloonDetailPage userName={this.user?this.user.name:''} actionMyLocation={actionMyLocation} />} />
 
                     <Route path="/history" element={<HistoryPage userName={this.user?this.user.name:''} actionMyLocation={actionMyLocation} />} />
                     

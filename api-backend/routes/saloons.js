@@ -27,6 +27,18 @@ router.get('/:id', async (req, res) => {
 });
 
 
+// Get Saloon By City and State
+router.get('/:city/:state', async (req, res) => {
+    
+    let saloon = await Saloon.find({city: req.params.city, state: req.params.state});
+    
+    res.json({
+        "success": true,
+        "data": saloon
+    });
+});
+
+
 // Add Saloon
 router.post('/', authentication, async (req, res) => {
     console.log(req.body)

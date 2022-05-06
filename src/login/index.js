@@ -16,6 +16,7 @@ class Login extends Form {
     };
 
     doSubmit = async () => {
+        this.state.data = {...this.state.data, user_type: 'user'}
         const loginDetail = await AuthService.login(this.state.data)
         if(loginDetail) {
           setTimeout(function() { window.location = "/"; }, 5000)

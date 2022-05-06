@@ -22,6 +22,11 @@ export async function addSaloon(post) {
     }
 }
 
+export async function getSaloonsByCityState(city, state) {
+    const response = await Http.get(apiEndPoint+"/"+city+"/"+state);
+    return response.data;
+}
+
 export async function getSaloonById(id) {
     const response = await Http.get(apiEndPoint+"/"+id);
     return response.data;
@@ -47,6 +52,7 @@ export async function deleteSaloon(id, post) {
 
 const saloons = {
     getSaloons,
+    getSaloonsByCityState,
     addSaloon,
     getSaloonById,
     updateSaloon,

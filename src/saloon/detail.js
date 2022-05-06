@@ -57,26 +57,33 @@ class SaloonDetailPage extends Component {
         const time = new Date();
         time.setSeconds(time.getSeconds() + 1200); // 10 minutes timer
 
+        let currentDay = new Date();
+        currentDay = currentDay.getDay();
+
         return (
             <>
+                {saloonList?
                 <div className="row">
                     <div className="col-md-6">
-                        <h1>{saloonList.name}</h1>
-                        <p>Open</p>
-                        <p>{saloonList.open_hours}</p>
+                        <div className="saloon_detail_left_one">
+                            <h1><b>Great Clips</b><br />{saloonList.name}</h1>
+                            <p><span><b>Open Today:</b> {saloonList.open_hours && Object.values(saloonList.open_hours)[currentDay]}</span></p>
+                        </div>
                     </div>
-                    <div className="col-md-6">
-                        <h3>Online Check-in</h3>
-                        {userName?
-                        (attendList && attendList.check_in && (!attendList.check_out || attendList.check_out === "undefined")?<button className="btn btn-primary" onClick={(e) => this.handleCheckOutNow(route.id)}>Check Out</button>:<button className="btn btn-primary" onClick={(e) => this.handleCheckInNow(route.id)}>Check In Now</button>)
-                        :<Link to="/login">Click Here To Login</Link>}
-                        <p>Estimated wait: </p>
-                        <p>Check in online to add your name to the wait list before you arrive</p>
-                        {userName && attendList && attendList.check_in && (!attendList.check_out || attendList.check_out === "undefined")?
-                        <h1><MyTimer expiryTimestamp={time} /><br />MIN</h1>
-                        :""}
+                    <div className="col-md-6" style={{background:"#eee"}}>
+                        <div className="saloon_detail_right_one text-center">
+                            <img src="/online-checkin.02f8f769.svg" />
+                            {userName?
+                            (attendList && attendList.check_in && (!attendList.check_out || attendList.check_out === "undefined")?<button className="btn btn-primary" onClick={(e) => this.handleCheckOutNow(route.id)}>Check Out</button>:<button className="btn btn-primary" onClick={(e) => this.handleCheckInNow(route.id)}>Check In Now</button>)
+                            :<Link to="/login" className="btn-primary">Click Here To Login</Link>}
+                            <p>Estimated wait: </p>
+                            <p>Check in online to add your name to the wait list before you arrive</p>
+                            {userName && attendList && attendList.check_in && (!attendList.check_out || attendList.check_out === "undefined")?
+                            <h1><MyTimer expiryTimestamp={time} /><br />MIN</h1>
+                            :""}
+                        </div>
                     </div>
-                </div>
+                </div>:<h2 className="text-center">No Record Found</h2>}
             </>
         );
     }

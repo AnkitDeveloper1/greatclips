@@ -16,14 +16,22 @@ code {
   height: 55px;
 }
 
-.quick-menu {
+.quick-menu, .header_right_side {
   padding: 0;
   margin: 0;
   vertical-align: middle;
   background: #f2f2f2;
-  height: 50px;
+  height: 45px;
   border-radius: 25px 0 0 25px!important;
-  font-size: 23px;
+}
+
+.quick-menu i {
+  font-size: 24px;
+}
+.quick-menu li a {
+  padding: 0.6rem 1rem;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
